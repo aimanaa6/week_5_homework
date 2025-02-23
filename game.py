@@ -11,10 +11,10 @@ def user_conversion(user_response):
     """
     if user_response == "R":
         return "Rock"
-    elif user_response == "S":
-        return "Scissors"
     elif user_response == "P":
         return "Paper"
+    elif user_response == "S":
+        return "Scissors"
     else:
         return "Invalid answer"
 # double equality operators - is the user response equal to the string?
@@ -83,7 +83,7 @@ def rock_paper_scissors():
     winner = determine_winner(user_conversion(user_response), computer_conversion(computer_choice))
     print(winner)
 
-# rock_paper_scissors()
+rock_paper_scissors()
 
 # THE MAIN TRICK
 if __name__ == "__rock_paper_scissors__":
