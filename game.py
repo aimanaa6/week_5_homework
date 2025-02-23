@@ -1,6 +1,6 @@
 import random
 
-def conversion(user_response):
+def user_conversion(user_response):
     """
     This function converts the letter inputted by the user
     :param user_response:
@@ -54,18 +54,22 @@ def determine_winner(user_response, computer_choice):
     else:
         return "You lose!"
 
-# opening command
-print("Rock,Paper or Scissors?")
-# prompt for user
-user_response = input("Please select R, P or S: ")
-# f string including variable with conversion function
-print(f"You have selected {conversion(user_response)}")
 
-# computer generates random number between both integers
-computer_choice = random.randint(0,2)
-# prints the computer's choice (converted from integer)
-print(f"The computer has chosen {computer_conversion(computer_choice)}")
+def rock_paper_scissors():
+    # opening command
+    print("Rock,Paper or Scissors?")
+    # prompt for user
+    user_response = input("Please select R, P or S: ")
+    # f string including variable with conversion function
+    print(f"You have selected {user_conversion(user_response)}")
+    # computer generates random number between both integers
+    computer_choice = random.randint(0, 2)
+    # prints the computer's choice (converted from integer)
+    print(f"The computer has chosen {computer_conversion(computer_choice)}")
+    # applies function and compares both responses to determine the winner
+    print(determine_winner(user_conversion(user_response), computer_conversion(computer_choice)))
 
-# applies function and compares both responses to determine the winner
-print(determine_winner(conversion(user_response), computer_conversion(computer_choice)))
+# rock_paper_scissors()
 
+if __name__ == "__rock_paper_scissors__":
+    rock_paper_scissors()
