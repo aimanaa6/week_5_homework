@@ -83,7 +83,7 @@ def rock_paper_scissors():
     winner = determine_winner(user_conversion(user_response), computer_conversion(computer_choice))
     print(winner)
 
-rock_paper_scissors()
+# rock_paper_scissors()
 
 # THE MAIN TRICK
 if __name__ == "__rock_paper_scissors__":
