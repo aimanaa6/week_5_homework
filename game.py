@@ -19,7 +19,7 @@ def user_conversion(user_response):
         return "Invalid answer"
 # double equality operators - is the user response equal to the string?
 # function has a parameter, making it more reusable
-# conditional statement loops through responses and returns a specified output
+# if statement is used for conditional execution - if initial condition is not true, the program will check the other conditions (elif, else)
 
 def computer_conversion(computer_choice):
     """
@@ -71,12 +71,14 @@ def rock_paper_scissors():
     print(welcome)
     # prompt for user
     user_response = input("Please select R, P or S: ")
-    # f string including variable with conversion function
+    # input function returns output value entered by the user
     print(f"You have selected {user_conversion(user_response)}")
     # computer generates random number between both integers
     computer_choice = random.randint(0, 2)
+    # returns a random integer between a and b
     # prints the computer's choice (converted from integer)
     print(f"The computer has chosen {computer_conversion(computer_choice)}")
+    # f string inputs the variable alongside the function inside the string
     # applies function and compares both responses to determine the winner
     winner = determine_winner(user_conversion(user_response), computer_conversion(computer_choice))
     print(winner)
