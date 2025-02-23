@@ -2,9 +2,8 @@ import game
 
 game.rock_paper_scissors()
 
-user_variable = game.user_conversion("R")
-print(user_variable)
+user = game.user_conversion("R")
+print(user)
 
-computer_variable = game.computer_conversion(2)
-print(computer_variable)
-
+computer = game.computer_conversion(2)
+print(computer)

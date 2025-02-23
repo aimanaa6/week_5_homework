@@ -39,7 +39,7 @@ def computer_conversion(computer_choice):
 
 def determine_winner(user_response, computer_choice):
     """
-    This function uses a dictionary and conditional statement to determine the winner
+    This function uses a dictionary and conditional statement to compare both values and determine the winner
     :param user_response:
     :param computer_choice:
     :return: results
