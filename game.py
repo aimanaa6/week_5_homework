@@ -5,6 +5,7 @@ def user_conversion(user_response):
     This function converts the letter inputted by the user
     :param user_response:
     :return: converted response
+
     """
     if user_response == "R":
         return "Rock"
@@ -20,6 +21,7 @@ def computer_conversion(computer_choice):
     This function uses a conditional statement to convert the randomised integer into a string
     :param computer_choice:
     :return: converted computer response
+
     """
     if computer_choice == 0:
         return "Rock"
@@ -35,6 +37,7 @@ def determine_winner(user_response, computer_choice):
     :param user_response:
     :param computer_choice:
     :return: results
+
     """
     outcomes = {
         "Rock": "Scissors",
