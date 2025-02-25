@@ -1,7 +1,7 @@
 import random
 # import module: random variable generator
 
-# creating three variables with parameters
+# created three functions
 def user_conversion(user_response):
     """
     This function uses a conditional statement to convert the letter inputted by the user
