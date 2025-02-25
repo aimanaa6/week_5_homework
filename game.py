@@ -45,11 +45,8 @@ def determine_winner(user_response, computer_choice):
     :return: results
 
     """
-    outcomes = {
-        "Rock": "Scissors",
-        "Paper": "Rock" ,
-        "Scissors": "Paper"
-    }
+    outcomes = {"Rock": "Scissors", "Paper": "Rock","Scissors": "Paper"}
+
     # dictionary {} outlines the different outcomes
     # keys = user choice/value = what option can the user beat?
     # keys are IMMUTABLE - useful for the game as the three items being played never change
@@ -71,7 +68,7 @@ def rock_paper_scissors():
     print(welcome)
     # prompt for user
     user_response = input("Please select R, P or S: ")
-    # input function returns output value entered by the user
+    # input function returns outputs value entered by the user
     print(f"You have selected {user_conversion(user_response)}")
     # computer generates random number between both integers
     computer_choice = random.randint(0, 2)
